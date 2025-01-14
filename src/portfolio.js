@@ -10,7 +10,7 @@ const about = {
   role: 'Software Engineer',
   description:
     'I am a dedicated Software Engineer with a keen focus on delivering innovative solutions. Known for tackling complex challenges with ease, I thrives in dynamic environments, leveraging strong problem-solving skills and attention to detail. With a passion for creating efficient and scalable systems, I consistently drives projects forward while ensuring seamless user experiences',
-  resume: '#',
+  resume: '../public/files/My_Resume.pdf',
   social: {
     linkedin: 'https://linkedin.com/in/huynhquoctienn/',
     github: 'https://github.com/huynhquoctien',
