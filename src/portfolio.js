@@ -25,7 +25,7 @@ const projects = [
     description:
       'Test Management Application is a tool for organizing and tracking software test cases. It simplifies test case creation, execution, and reporting with seamless integration into development workflows. Designed to improve collaboration and streamline QA processes, it ensures efficient test management.',
     stack: ['C#', 'Winform', 'SQL Server'],
-    sourceCode: 'https://github.com/app-test-management',
+    sourceCode: 'https://github.com/HuynhQuocTien/app-test-management',
     livePreview: 'https://github.com',
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     description:
       'Hotel Management is a web-based system for managing hotel operations, including room bookings, guest management, and billing. Built using Laravel, Docker, and MySQL, this project offers a scalable and flexible solution for streamlining hotel services. The system provides a user-friendly interface for staff and administrators, enhancing efficiency and guest satisfaction.',
     stack: ['Laravel', 'Docker', 'MySQL'],
-    sourceCode: 'https://github.com/Hotel-House',
+    sourceCode: 'https://github.com/HuynhQuocTien/Hotel-House',
     livePreview: 'https://github.com',
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     description:
       'Website Chat Fun is an interactive chat platform designed for real-time communication on websites. Built with Python, Firebase, and React, this project enables seamless user interaction with features like instant messaging, chat rooms, and notifications. It offers a responsive and engaging experience for users, with robust backend support for scalability and real-time updates.',
     stack: ['Python', 'Firebase', 'React'],
-    sourceCode: 'https://github.com/app-chat-fun',
+    sourceCode: 'https://github.com/HuynhQuocTien/app-chat-fun',
     livePreview: 'https://github.com',
   },
 ]
