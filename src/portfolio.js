@@ -16,35 +16,41 @@ const about = {
     github: 'https://github.com/huynhquoctien',
   },
 }
-
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
   {
-    name: 'Test Management Application',
+    name: 'Ecommerce Website',
     description:
-      'Test Management Application is a tool for organizing and tracking software test cases. It simplifies test case creation, execution, and reporting with seamless integration into development workflows. Designed to improve collaboration and streamline QA processes, it ensures efficient test management.',
-    stack: ['C#', 'Winform', 'SQL Server'],
-    sourceCode: 'https://github.com/HuynhQuocTien/app-test-management',
-    livePreview: 'https://github.com',
+      'Built a full-featured e-commerce platform with product browsing, cart management, order processing, and real-time notifications. Includes secure authentication, MSSQL integration, and an admin dashboard for inventory and orders.',
+    stack: ['C#', 'ASP.NET', 'MSSQL', 'Socket.io'],
+    sourceCode: 'https://github.com/HuynhQuocTien/e-commerce-website.git',
+    livePreview: '#',
   },
   {
-    name: 'Website Hotel Management',
+    name: 'Diary Medical Website',
     description:
-      'Hotel Management is a web-based system for managing hotel operations, including room bookings, guest management, and billing. Built using Laravel, Docker, and MySQL, this project offers a scalable and flexible solution for streamlining hotel services. The system provides a user-friendly interface for staff and administrators, enhancing efficiency and guest satisfaction.',
-    stack: ['Laravel', 'Docker', 'MySQL'],
-    sourceCode: 'https://github.com/HuynhQuocTien/Hotel-House',
-    livePreview: 'https://github.com',
+      'Developed a web-based medical diary system for families to track health records, view medical history, and get automated appointment reminders. Supports secure data handling and role-based access control.',
+    stack: ['Java', 'Spring Boot', 'MySQL', 'Hibernate'],
+    sourceCode: 'https://github.com/HuynhQuocTien/J2EE_DiaryMedical.git',
+    livePreview: '#',
   },
   {
-    name: 'Website Chat Fun',
+    name: 'Car Rental Website',
     description:
-      'Website Chat Fun is an interactive chat platform designed for real-time communication on websites. Built with Python, Firebase, and React, this project enables seamless user interaction with features like instant messaging, chat rooms, and notifications. It offers a responsive and engaging experience for users, with robust backend support for scalability and real-time updates.',
-    stack: ['Python', 'Firebase', 'React'],
-    sourceCode: 'https://github.com/HuynhQuocTien/app-chat-fun',
-    livePreview: 'https://github.com',
+      'Created a responsive car rental website with multi-car booking, detailed vehicle info, reservation deposits, and return inspection with damage penalties. Includes an admin dashboard for managing cars and bookings.',
+    stack: ['PHP', 'MySQL', 'Bootstrap 5', 'Dashmix'],
+    sourceCode: 'https://github.com/HuynhQuocTien/Car-Rental-Website.git',
+    livePreview: '#',
   },
-]
+  {
+    name: 'Real-Time Chat Application',
+    description:
+      'Built a Zalo-inspired real-time messaging app supporting one-on-one, group chats, and media sharing. Features include user authentication, presence indicators, notifications, and performance optimization.',
+    stack: ['Django', 'Python', 'MongoDB', 'Socket.io'],
+    sourceCode: 'https://github.com/HuynhQuocTien/e-commerce-website.git',
+    livePreview: '#',
+  },
+];
+
 
 const skills = [
   'HTML',
