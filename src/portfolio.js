@@ -96,7 +96,6 @@ const experience = [
 
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'quoctien01062003@mail.com',
 }
 
