@@ -1,9 +1,10 @@
 import React from 'react'
+import uniqid from 'uniqid'
 import { experience } from '../../portfolio'
 import './Experience.css'
 
 const Experience = () => {
-  if (!experience.length) return null
+  if (!experience || !experience.length) return null
 
   return (
     <section id='experience' className='section experience'>
@@ -11,16 +12,20 @@ const Experience = () => {
 
       <div className='experience__list'>
         {experience.map((item) => (
-          <div key={item.title} className='experience__item'>
+          <div key={uniqid()} className='experience__item'>
             <h3 className='experience__role'>
               {item.title}
               <span className='experience__company'> @ {item.company}</span>
             </h3>
-            <p className='experience__date'>{item.date}</p>
-            <p className='experience__location'>{item.location}</p>
+            <div className='experience__meta'>
+              <span className='experience__date'>{item.date}</span>
+              {item.location && (
+                <span className='experience__location'>• {item.location}</span>
+              )}
+            </div>
             <ul className='experience__details'>
               {item.details.map((line) => (
-                <li key={`${item.title}-${line}`}>{line}</li>
+                <li key={uniqid()}>{line}</li>
               ))}
             </ul>
           </div>

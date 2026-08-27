@@ -8,30 +8,40 @@
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 1em;
+  font-size: 1.4rem;
+  color: var(--clr-fg-alt);
 }
 
 .about__desc {
-  font-size: 1rem;
-  max-width: 600px;
+  font-size: 1.05rem;
+  max-width: 780px;
+  text-align: center;
+  line-height: 1.7;
 }
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 2em;
 }
 
 .about .link--icon {
   margin-right: 0.8em;
+  display: inline-flex;
+  align-items: center;
 }
 
 .about .btn--outline {
-  margin-right: 1em;
+  margin-right: 1.2em;
 }
 
 @media (max-width: 600px) {
   .app .about {
     align-items: flex-start;
     margin-top: 2em;
+  }
+
+  .about__desc {
+    text-align: left;
   }
 }

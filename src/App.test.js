@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from '@testing-library/react'
+import App from './App'
+import { ThemeProvider } from './contexts/theme'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('renders portfolio with author name', () => {
+  render(
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  )
+  const nameElements = screen.getAllByText(/Huynh Quoc Tien/i)
+  expect(nameElements.length).toBeGreaterThan(0)
+})

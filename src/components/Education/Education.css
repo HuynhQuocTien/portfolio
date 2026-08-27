@@ -1,8 +1,8 @@
-.experience {
+.education {
   margin-top: 4em;
 }
 
-.experience__list {
+.education__list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.experience__item {
+.education__item {
   background-color: var(--clr-bg-alt);
   padding: 1.8rem 2.2rem;
   color: var(--clr-fg);
@@ -19,22 +19,29 @@
   transition: transform 0.2s linear;
 }
 
-.experience__item:hover {
+.education__item:hover {
   transform: translateY(-4px);
 }
 
-.experience__role {
+.education__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.education__degree {
   font-size: 1.25rem;
   font-weight: bold;
   color: var(--clr-primary);
 }
 
-.experience__company {
+.education__school {
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--clr-fg);
 }
 
-.experience__meta {
+.education__meta {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -45,21 +52,18 @@
   font-weight: 500;
 }
 
-.experience__date {
-  color: var(--clr-fg-alt);
+.education__gpa {
+  font-weight: 600;
+  color: var(--clr-primary);
 }
 
-.experience__location {
-  color: var(--clr-fg-alt);
-}
-
-.experience__details {
+.education__details {
   margin-top: 1.2rem;
   padding-left: 1.25rem;
   line-height: 1.65;
 }
 
-.experience__details li {
-  color: var(--clr-fg);
+.education__details li {
   margin-bottom: 0.5rem;
+  color: var(--clr-fg);
 }
