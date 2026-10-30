@@ -1,6 +1,7 @@
 import uniqid from 'uniqid'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
+import TelegramIcon from '@material-ui/icons/Telegram'
 import './ProjectContainer.css'
 
 const GitLabIcon = () => (
@@ -19,10 +20,16 @@ const GitLabIcon = () => (
 const ProjectContainer = ({ project }) => {
   const isGitLab =
     project.sourceCode && project.sourceCode.includes('gitlab.com')
+  const telegramUrl =
+    project.telegram ||
+    (project.livePreview && project.livePreview.includes('t.me')
+      ? project.livePreview
+      : null)
   const hasLivePreview =
     project.livePreview &&
     project.livePreview !== '#' &&
-    project.livePreview.trim() !== ''
+    project.livePreview.trim() !== '' &&
+    project.livePreview !== telegramUrl
 
   return (
     <div className='project'>
@@ -52,6 +59,18 @@ const ProjectContainer = ({ project }) => {
               className='link link--icon'
             >
               {isGitLab ? <GitLabIcon /> : <GitHubIcon />}
+            </a>
+          )}
+
+          {telegramUrl && (
+            <a
+              href={telegramUrl}
+              target='_blank'
+              rel='noreferrer'
+              aria-label='telegram bot'
+              className='link link--icon'
+            >
+              <TelegramIcon />
             </a>
           )}
 

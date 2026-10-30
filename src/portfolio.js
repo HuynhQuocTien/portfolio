@@ -5,57 +5,78 @@ const header = {
 
 const about = {
   name: 'Huynh Quoc Tien',
-  role: 'Full-Stack JavaScript / TypeScript Developer',
+  role: 'Software Engineer | Full-Stack Developer',
   description:
-    'Results-driven Software Engineer with a solid foundation in computer science and extensive hands-on experience architecting high-performance, real-time web applications and scalable backend systems. Specialized in NestJS, Next.js 15, ReactJS, TypeScript, PostgreSQL, and Redis, with a proven track record of eliminating concurrency race conditions, optimizing complex database queries using recursive CTEs, and streamlining CI/CD pipelines with Docker. Passionate about clean architecture, sub-100ms real-time experiences, and delivering high-impact, enterprise-grade software.',
+    'Software Engineer with a solid foundation in computer science and hands-on experience developing high-performance, real-time web systems and automated enterprise workflows. Proficient in Node.js, NestJS, TypeScript, PostgreSQL, MongoDB, Redis, and Next.js/React, with a proven track record in resolving concurrency/race-condition challenges, designing clean Hexagonal Architecture, optimizing database operations, and automating CI/CD deployments with Docker. Strong advocate for clean architecture, automated testing, and scalable product delivery.',
   resume: 'My_Resume.pdf',
   social: {
     linkedin: 'https://linkedin.com/in/huynhquoctienn',
     github: 'https://github.com/HuynhQuocTien',
     gitlab: 'https://gitlab.com/HuynhQuocTien',
+    email: 'quoctien01062003@gmail.com',
   },
 }
 
 const experience = [
   {
     title: 'Freelance Full-Stack Developer',
-    company: 'Client Project (Chip-equipped Driving Test Booking System)',
+    company: 'Chip-equipped Driving Test Booking System (Client Project)',
     location: 'Ho Chi Minh City, Vietnam',
     date: 'Dec 2025 – May 2026',
     details: [
-      'Architected and delivered an end-to-end booking platform for chip-equipped driving test simulations using NestJS, Next.js 15 (App Router), Prisma, and PostgreSQL.',
-      'Eliminated double-booking and race conditions by engineering a distributed real-time slot-locking mechanism with Redis and Socket.io, broadcasting slot state changes with sub-100ms latency.',
-      'Designed automated cron workers using @nestjs/schedule to auto-release expired pending reservations (15-min TTL), maximizing vehicle utilization and eliminating idle lock holding time.',
-      'Built a high-performance, mobile-responsive time-slot matrix UI using Next.js 15 and Tailwind CSS, enabling real-time slot state reflection and seamless multi-vehicle schedule tracking.',
-      'Integrated automated VietQR dynamic payment generation and enforced robust Role-Based Access Control (RBAC) via JWT and custom NestJS Guard interceptors.',
+      'Engineered a full-stack booking platform for chip-equipped driving test simulations using NestJS, Next.js 15 (App Router), Prisma, and PostgreSQL.',
+      'Eliminated double-booking and race conditions by implementing a real-time slot-locking mechanism with Redis and Socket.io, broadcasting slot status with sub-100ms latency.',
+      'Designed automated cron workers using @nestjs/schedule to auto-release expired pending reservations (15-min TTL), improving vehicle utilization and reducing slot holding idle time.',
+      'Built an intuitive time-slot grid UI with Next.js 15 and Tailwind CSS, enabling real-time slot state reflection and seamless multi-vehicle schedule tracking.',
+      'Integrated automated VietQR dynamic payment payload generation and secured role-based access control (RBAC) via JWT and custom Guards.',
     ],
   },
   {
     title: 'Backend Developer Intern',
     company: 'VNA International Technology JSC',
-    location: 'Thu Duc City, Ho Chi Minh City, Vietnam',
+    location: 'Ho Chi Minh City, Vietnam',
     date: 'May 2025 – Nov 2025',
     details: [
-      'Developed core enterprise backend modules for a labor safety reporting platform using NestJS, TypeORM, and PostgreSQL, reducing manual reporting turnaround time by 30%.',
-      'Architected modular, scalable RESTful APIs adhering to clean Service/DTO patterns and secured endpoints with JWT authentication and custom security Guards.',
-      'Automated cloud asset workflows by integrating Multer-S3 with MinIO object storage, implementing scheduled cron tasks for automated asset retention and lifecycle cleanup.',
-      'Engineered management modules for user-roles, report configurations, and enterprise approval workflows.',
-      'Integrated Nodemailer for automated transactional email notification dispatch and generated interactive Swagger/OpenAPI documentation, accelerating frontend integration velocity by 20%.',
+      'Developed core enterprise modules for a labor safety reporting system, reducing manual reporting time by 30% using NestJS, TypeORM, and PostgreSQL.',
+      'Architected modular RESTful APIs with DTO/Service patterns and secured endpoints using JWT and custom Guards.',
+      'Automated file processing by integrating Multer-S3 with MinIO, implementing an auto-cleanup service for outdated files.',
+      'Engineered management modules for user-roles, report configuration, and enterprise approval workflows.',
+      'Integrated Nodemailer for automated email notifications, improving user communication efficiency.',
+      'Documented API endpoints using Swagger/OpenAPI, facilitating a 20% faster frontend integration.',
     ],
   },
 ]
 
 const projects = [
   {
-    name: 'Swarm.io - Real-Time Multiplayer .io Game',
+    name: 'Ecommerce Affiliate & Cashback System',
     description:
-      'High-throughput real-time multiplayer .io game achieving consistent 60 FPS performance and seamless synchronization for 50+ concurrent players. Engineered server-authoritative state management and spatial collision detection in Node.js & Socket.io ensuring 100% deterministic state consistency, scaled communication with Redis Pub/Sub cutting peak message latency by 50%, and built an ultra-responsive ReactJS UI.',
+      'Architected and delivered an automated affiliate and cashback system; currently responsible for end-to-end system maintenance, performance optimization, and feature expansions. Engineered clean Hexagonal Architecture (Ports & Adapters) with Awilix IoC container, decoupling core domain logic from messaging and e-commerce platforms. Developed multi-channel chatbot integration for Telegram and Zalo Web, building a custom Chrome Extension (MV3) to hook WebSockets, decrypt AES-GCM payloads, and bypass bot detection. Implemented automated cashback pipeline with anti-fraud cart-mismatch validation, commission splitting calculation, Jimp/jsQR VietQR decoding, dynamic payout generation, and Docker + GitLab CI/CD (99.9% uptime).',
+    stack: [
+      'Node.js',
+      'MongoDB',
+      'Awilix (IoC)',
+      'Hexagonal Architecture',
+      'Socket.io',
+      'Chrome Extension MV3',
+      'Telegram Bot',
+      'Docker',
+      'GitLab CI/CD',
+    ],
+    telegram: 'https://t.me/san_xu_bot',
+    livePreview: 'https://t.me/san_xu_bot',
+    sourceCode: '',
+  },
+  {
+    name: 'Swarm.io - Multiplayer .io Game',
+    description:
+      'Developed an endless real-time multiplayer .io game, achieving 60 FPS performance for 50+ concurrent players in a dynamic shared map. Engineered server-authoritative game state loops in Node.js at 60 ticks/s, eliminating client-side desync and preventing cheating. Implemented 2D spatial grid partitioning collision detection, optimizing damage calculations from O(N^2) to O(N). Scaled real-time communication by integrating Redis Pub/Sub, cutting message latency by 50% (sub-50ms) for active users, with a responsive ReactJS UI and Linear Interpolation (LERP) for seamless rendering.',
     stack: [
       'ReactJS',
       'Node.js',
       'Socket.io',
       'Redis Pub/Sub',
-      'Tailwind CSS',
+      'Canvas',
       'WebSockets',
     ],
     sourceCode: 'https://gitlab.com/HuynhQuocTien/swarm.io',
@@ -64,7 +85,7 @@ const projects = [
   {
     name: 'Esports Tournament Management Platform',
     description:
-      'High-performance full-stack platform managing 100+ concurrent tournaments with multi-tier RBAC. Automated bracket generation for Single and Double Elimination formats (slashing administrative overhead by 80%), integrated real-time match and score synchronization via Redis Pub/Sub & WebSockets (<100ms latency), optimized complex PostgreSQL hierarchical queries using recursive CTEs and indexing strategies, and automated CI/CD with Docker & GitHub Actions (cutting deployment time by 50%).',
+      'Architected a comprehensive esports platform, supporting 100+ concurrent tournaments with multi-role access control. Automated bracket generation for Single and Double Elimination formats, reducing manual administrative setup time by 80%. Implemented real-time match synchronization using Redis Pub/Sub and WebSockets, ensuring sub-100ms latency for bracket updates. Optimized PostgreSQL performance for hierarchical tournament data by applying recursive Common Table Expressions (CTEs) and indexing. Containerized the stack with Docker and deployed an automated CI/CD pipeline using GitHub Actions, cutting deployment time by 50%.',
     stack: [
       'NestJS',
       'ReactJS',
@@ -79,9 +100,9 @@ const projects = [
     livePreview: '',
   },
   {
-    name: 'Multiplayer Tetris Game',
+    name: 'Multiplayer Real-Time Tetris Game',
     description:
-      'Real-time competitive multiplayer Tetris game supporting 10+ simultaneous players per room with sub-50ms synchronization latency. Implemented server-side deterministic piece sequence synchronization for 100% state consistency across clients, dynamic difficulty progression, Clean Code & HOC architecture improving component reusability by 25%, and automated CI/CD pipeline cutting deployment time by 40%.',
+      'Developed a real-time multiplayer Tetris game, supporting 10+ simultaneous players per room with sub-50ms synchronization latency. Implemented server-side 7-Bag PRNG piece sequence generator, ensuring 100% state consistency across all clients. Managed server-side game state with dynamically increasing difficulty levels, knockout logic, and real-time garbage line attack system. Applied Clean Code and HOCs in ReactJS to improve component reusability by 25%, and configured automated CI/CD pipelines.',
     stack: [
       'ReactJS',
       'Node.js',
@@ -94,51 +115,11 @@ const projects = [
     livePreview: '',
   },
   {
-    name: 'Driving Test Simulation Booking Platform',
+    name: 'Ecommerce Website',
     description:
-      'Production-ready client booking platform featuring a concurrency-safe slot-locking engine powered by Redis & Socket.io (sub-100ms live updates) preventing race conditions, 15-minute reservation TTL cron workers, automated dynamic VietQR instant payment reconciliation, and granular Role-Based Access Control.',
-    stack: [
-      'NestJS',
-      'Next.js 15',
-      'Prisma ORM',
-      'PostgreSQL',
-      'Redis',
-      'Socket.io',
-      'Tailwind CSS',
-      'VietQR',
-    ],
-    sourceCode: 'https://github.com/HuynhQuocTien',
-    livePreview: '',
-  },
-  {
-    name: 'Enterprise E-Commerce Platform',
-    description:
-      'Robust e-commerce platform supporting 500+ daily requests with 99.9% uptime. Built with ASP.NET Core and ReactJS, featuring secure RBAC authentication (100% data security), MSSQL data management with sub-200ms product search times, asynchronous server optimization reducing average page load by 30%, and an admin dashboard cutting order processing time by 20%.',
-    stack: [
-      'ReactJS',
-      'ASP.NET Core',
-      'C#',
-      'MSSQL',
-      'Socket.io',
-      'RESTful API',
-    ],
+      'Built a full-featured e-commerce platform with product cataloging, shopping cart, and order processing, supporting 500+ daily requests. Designed a secure user authentication system with RBAC, ensuring 100% protection of user data access. Integrated MSSQL database with composite indexing, achieving sub-200ms product search times. Optimized server performance by implementing asynchronous operations in ASP.NET, reducing average page load time by 30%.',
+    stack: ['ReactJS', 'ASP.NET', 'C#', 'MSSQL', 'Socket.io', 'RESTful API'],
     sourceCode: 'https://github.com/HuynhQuocTien/e-commerce-website.git',
-    livePreview: '',
-  },
-  {
-    name: 'Spotify Clone & AI Streaming Platform',
-    description:
-      'Full-stack audio & video streaming web application featuring playlist management, RESTful APIs, offline media downloads, real-time sync with WebSockets, and natural-language AI music recommendation powered by Google Gemini LLM.',
-    stack: [
-      'ReactJS',
-      'Django',
-      'Python',
-      'MongoDB',
-      'Socket.io',
-      'Google Gemini AI',
-      'Ant Design',
-    ],
-    sourceCode: 'https://github.com/HuynhQuocTien/Spotify',
     livePreview: '',
   },
 ]
@@ -150,12 +131,13 @@ const skills = [
       'NestJS',
       'TypeScript',
       'Node.js',
+      'Express.js',
+      'Socket.io',
       'RESTful API',
-      'WebSockets (Socket.io)',
-      'Prisma ORM',
-      'TypeORM',
-      'JWT & RBAC',
-      'Microservices / Event-Driven',
+      'Hexagonal Architecture',
+      'Awilix (IoC)',
+      'JWT',
+      'RBAC',
     ],
   },
   {
@@ -163,31 +145,30 @@ const skills = [
     items: [
       'ReactJS',
       'Next.js 15 (App Router)',
-      'TypeScript / JavaScript (ES6+)',
       'Tailwind CSS',
-      'Ant Design',
       'HTML5 / CSS3',
-      'Responsive & Mobile-First UI',
+      'Ant Design',
+      'Responsive Web Design',
     ],
   },
   {
     category: 'Databases & Caching',
     items: [
-      'PostgreSQL (Recursive CTEs, Indexing)',
-      'Redis (Pub/Sub & Distributed Caching)',
+      'PostgreSQL',
+      'MongoDB',
+      'Redis (Pub/Sub & Caching)',
       'MySQL',
       'MSSQL',
-      'MongoDB',
-      'Supabase',
+      'Prisma ORM',
+      'TypeORM',
     ],
   },
   {
-    category: 'DevOps, Cloud & Tools',
+    category: 'DevOps & Tools',
     items: [
-      'Docker & Containerization',
-      'CI/CD (GitHub Actions)',
-      'AWS S3 / MinIO Object Storage',
-      'Git / GitHub / GitLab',
+      'Docker',
+      'CI/CD (GitLab / GitHub Actions)',
+      'Git',
       'Swagger / OpenAPI',
       'Postman',
       'Linux',
@@ -197,7 +178,7 @@ const skills = [
 
 const education = [
   {
-    degree: "Engineer's Degree in Software Engineering",
+    degree: 'Bachelor of Engineering in Software Engineering',
     school: 'Sai Gon University',
     location: 'Ho Chi Minh City, Vietnam',
     date: '2021 – 2026',
@@ -211,7 +192,7 @@ const education = [
 
 const contact = {
   email: 'quoctien01062003@gmail.com',
-  phone: '0974975649',
+  phone: '(+84) 974 975 649',
 }
 
 export { header, about, projects, skills, experience, education, contact }
